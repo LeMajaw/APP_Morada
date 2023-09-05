@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './styles.css';
 import { Link, useHistory, useParams } from 'react-router-dom';
-import { FiCornerDownLeft } from 'react-icons/fi';
 import { GrReturn } from 'react-icons/gr';
 import { BsHouseAdd } from 'react-icons/bs';
 import api from '../../services/api';
@@ -93,11 +92,8 @@ export default function NovaMorada() {
             <section className="form"><BsHouseAdd size="300" color="#17202a" />
                <h1>{moradaId === '0' ? 'Incluir Nova Morada' : 'Atualizar Morada'}</h1>
                <Link className="back-link" to="/moradas">
-                  {/* <GiReturnArrow size="25" color="#17202a"/> */}
-                  {/* <FiCornerDownLeft size="25" color="#17202a"/> Retornar GiReturnArrow */}
-
                   <div className="button-retorno">
-                     <GrReturn size={50} style={{marginTop: 10}} />
+                     <GrReturn size={50} style={{ marginTop: 10 }} />
                   </div>
                </Link>
             </section>
@@ -133,7 +129,6 @@ export default function NovaMorada() {
                />
                <button className="button" type="submit">{moradaId === '0' ? 'Incluir ' : 'Atualizar '}</button>
             </form>
-
          </div>
       </div>
    );

@@ -5,31 +5,31 @@
     margin: 20px auto;
 }
 
-.morada-container header{
+.morada-container header {
     display: flex;
     align-items: center;
 }
 
-.morada-container header span{
+.morada-container header span {
     font-size: 20px;
     margin-left: 25px;
 }
 
-.morada-container header span strong{
+.morada-container header span strong {
     color: #333333;
 }
 
-.morada-container header img{
+.morada-container header img {
     height: 50px;
 }
 
-.morada-container header a{
+.morada-container header a {
     width: 250px;
     margin-left: auto;
     margin-top: 0;
 }
 
-.morada-container header button{
+.morada-container header button {
     height: 30px;
     width: 30px;
     padding: 10px;
@@ -40,7 +40,7 @@
     transition: border-color 0.5s;
 }
 
-.morada-container header button:hover{
+.morada-container header button:hover {
     border-color: #201465;
 }
 
@@ -58,7 +58,7 @@
     list-style: none;
 }
 
-.morada-container ul li{
+.morada-container ul li {
     background: #ffffff;
     padding: 10px;
     border-radius: 10px;
@@ -71,24 +71,24 @@
     right: 7px;
     top: 7px;
     border: 0;
-    background: transparent;  
+    background: transparent;
 }
 
-.morada-container ul li button + button{
-    top: 40px;  
+.morada-container ul li button+button {
+    top: 40px;
 }
 
-.morada-container ul li button:hover{
-    opacity: 0.8;  
+.morada-container ul li button:hover {
+    opacity: 0.8;
 }
 
-.morada-container ul li strong{
+.morada-container ul li strong {
     display: block;
     margin-bottom: 16px;
     color: #41414D;
 }
 
-.morada-container ul li p + strong{
+.morada-container ul li p+strong {
     margin-top: 32px;
 }
 

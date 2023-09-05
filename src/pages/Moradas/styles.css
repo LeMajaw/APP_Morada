@@ -47,6 +47,7 @@
 .morada-container h1 {
     margin-top: 20px;
     margin-bottom: 24px;
+    text-align: center;
 }
 
 .morada-container ul {
@@ -62,18 +63,19 @@
     padding: 10px;
     border-radius: 10px;
     position: relative;
+    word-wrap: break-word;
 }
 
 .morada-container ul li button {
     position: absolute;
-    right: 25px;
-    top: 25px;
+    right: 7px;
+    top: 7px;
     border: 0;
     background: transparent;  
 }
 
 .morada-container ul li button + button{
-    top: 50px;  
+    top: 40px;  
 }
 
 .morada-container ul li button:hover{

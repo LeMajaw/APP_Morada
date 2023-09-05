@@ -9,11 +9,13 @@
 
 body {
     font: 400 14px Roboto, sans-serif;
-    background:  #F0F0F5;
+    background: #F0F0F5;
     -webkit-font-smoothing: antialiased;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
     font: 400 18px Roboto, sans-serif;
 }
 
@@ -43,11 +45,32 @@ form input {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 60px;
     transition: filter 0.3s;
 }
 
-.button:hover {
-    filter: brightness(80%);
+.button:hover,
+.button-retorno:hover {
+    filter: brightness(77%);
+}
+
+.button-retorno {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #6d66ef;
+    border: 0;
+    color: #333333;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 60px;
+    transition: filter 0.3s;
 }

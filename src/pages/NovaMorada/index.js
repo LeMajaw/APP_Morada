@@ -89,9 +89,12 @@ export default function NovaMorada() {
    return (
       <div className="nova-morada-container">
          <div className="content">
-            <section className="form"><BsHouseAdd size="300" color="#17202a" />
+            <section className="form">
+               <div id='icon-add-morada'>
+                  <BsHouseAdd size="300" color="#17202a" />
+               </div>
                <h1>{moradaId === '0' ? 'Incluir Nova Morada' : 'Atualizar Morada'}</h1>
-               <Link className="back-link" to="/moradas">
+               <Link id='big-screen-back-button' className="back-link" to="/moradas"  style={{display: "block"}}>
                   <div className="button-retorno">
                      <GrReturn size={50} style={{ marginTop: 10 }} />
                   </div>
@@ -129,6 +132,11 @@ export default function NovaMorada() {
                />
                <button className="button" type="submit">{moradaId === '0' ? 'Incluir ' : 'Atualizar '}</button>
             </form>
+            <Link id='small-screen-back-button' className="back-link" to="/moradas" style={{display: "none"}}>
+               <div className="button-retorno">
+                  <GrReturn size={50} style={{ marginTop: 10 }} />
+               </div>
+            </Link>
          </div>
       </div>
    );

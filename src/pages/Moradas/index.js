@@ -77,7 +77,6 @@ export default function Moradas() {
     }
   }
 
-
   return (
     <div className="morada-container">
       <header>
@@ -85,7 +84,8 @@ export default function Moradas() {
         <span>Bem-Vindo, <strong>{email}</strong>!</span>
         <Link className="button" to="morada/nova/0">Nova Morada</Link>
 
-        <button onClick={logout} type="button" style={{ border: 0, padding: 0 }}>
+        {/* <button onClick={logout} type="button" style={{ border: 0, padding: 0 }}> */}
+        <button onClick={logout} type="button">
           <BiLogOut size={35} color="#d22e2e" />
         </button>
       </header>
@@ -99,16 +99,18 @@ export default function Moradas() {
 
       <h1>Moradas Cadastradas</h1>
       {searchInput.length > 1 ? (
-        <ul>
+        <ul className='vertical-list'>
           {filtro.map(morada => (
             <li key={morada.Id}>
-              <b>Morada: </b>{morada.morada}<br /><br />
-              <b>Código Postal: </b>{morada.codigoPostal}<br /><br />
-              <b>Rua: </b>{morada.rua}<br /><br />
-              <b>Freguesia: </b>{morada.freguesia}<br /><br />
-              <b>Concelho: </b>{morada.concelho}<br /><br />
-              <b>Distrito: </b>{morada.distrito}<br /><br />
-              <b>País: </b>{morada.pais}<br /><br />
+              <div className="itens-container">
+                <b>Morada: </b>{morada.morada}<br /><br />
+                <b>Código Postal: </b>{morada.codigoPostal}<br /><br />
+                <b>Rua: </b>{morada.rua}<br /><br />
+                <b>Freguesia: </b>{morada.freguesia}<br /><br />
+                <b>Concelho: </b>{morada.concelho}<br /><br />
+                <b>Distrito: </b>{morada.distrito}<br /><br />
+                <b>País: </b>{morada.pais}<br /><br />
+              </div>
               <button onClick={() => editMorada(morada.id)} type="button">
                 <FiEdit size="25" color="#4682b4" />
               </button>
@@ -122,13 +124,16 @@ export default function Moradas() {
         <ul>
           {moradas.map(morada => (
             <li key={morada.id}>
-              <b>Morada: </b>{morada.morada}<br /><br />
-              <b>Código Postal: </b>{morada.codigoPostal}<br /><br />
-              <b>Rua: </b>{morada.rua}<br /><br />
-              <b>Freguesia: </b>{morada.freguesia}<br /><br />
-              <b>Concelho: </b>{morada.concelho}<br /><br />
-              <b>Distrito: </b>{morada.distrito}<br /><br />
-              <b>País: </b>{morada.pais}<br /><br />
+              <div className="itens-container">
+                <b>Morada: </b>{morada.morada}<br /><br />
+                <b>Código Postal: </b>{morada.codigoPostal}<br /><br />
+                <b>Rua: </b>{morada.rua}<br /><br />
+                <b>Freguesia: </b>{morada.freguesia}<br /><br />
+                <b>Concelho: </b>{morada.concelho}<br /><br />
+                <b>Distrito: </b>{morada.distrito}<br /><br />
+                <b>País: </b>{morada.pais}<br /><br />
+              </div>
+
               <button onClick={() => editMorada(morada.id)} type="button">
                 <FiEdit size="25" color="#4682b4" />
               </button>
